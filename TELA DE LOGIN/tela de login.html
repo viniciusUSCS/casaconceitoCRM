@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela-login</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!-- começo do css -->
+<style>
+    body{
+        
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(85deg, rgb(147, 227, 238), rgb(79, 115, 233));
+    }
+    .tela-login{
+        background-color: #d3d3d3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 60px;
+        border-radius: 20px;
+        color: black;
+        text-align: center;
+    }
+    input{
+        padding: 15px;
+        width: 100%;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        
+
+    }
+      button{
+        padding: 10px;
+        background-color: rgb(white);
+        width: 112%;
+        border-radius: 10px;
+        color: black;
+        font-size: 15px;
+        cursor: pointer;
+        outline: none;
+        
+        
+      }
+      
+      button :hover{
+        background-color: rgb(2, 14, 122);
+       
+      }
+      
+      
+      
+    </style>
+    <!--fim do css -->
+<html>
+<head>
+    <body>
+        <div class="tela-login">
+            <img src="imagens/logo.png">
+            <h1>Login</h1>
+            <input type="text" placeholder="Nome" id="usuario">
+            <br><br>
+            <input type="password" placeholder="Senha" id="senha">
+            <br><br>
+            <button onclick="logar()" >Entrar</button>
+        </div>
+        <!-- começo do javascript -->
+        <script>
+
+            function logar(){
+
+                var nome = document.getElementById("usuario").value;
+                var senha = document.getElementById("senha").value;
+
+                if(nome == "admin" && senha == "admin"){
+                    location.href  = "file:///C:/Users/Vinicius/Desktop/CRM%20CASA%20CONCEITO/MENU%20ADMIN/index.html"
+                    alert("Bem vindo ADMIN!")
+                } else if (nome == "captador" && senha == "captador"){
+                    location.href="file:///C:/Users/Vinicius/Desktop/CRM%20CASA%20CONCEITO/MENU%20CAPTADOR/index.html"
+                    alert("Bem vindo CAPTADOR!")
+                }
+                else{
+                    alert("Usuario ou senha incorretos")
+                }
+            }
+        
+        </script>
+    </body>
+    </head>
+    </html>

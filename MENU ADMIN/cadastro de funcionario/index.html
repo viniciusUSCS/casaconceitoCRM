@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de funcionario</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div id="container">
+
+        <h1>Cadastro Funcionario</h1>
+            <hr>
+            <br>
+            <form action="">
+
+                <p>Dados de identificação:</p>
+
+                <br>
+
+                <fieldset>
+                    <div id="conteudo">
+
+                        
+                            <div id="dado">
+            
+                                <label for="nome"> Nome completo:</label>
+                                <input type="text"name="nome" class="tamanhoinput" placeholder="Nome completo" required> 
+                
+                               <label for="rg">RG:</label>  
+                                <input type="text" name="rg" placeholder="Numero do RG">
+                
+                                <label for="rg">CPF:</label>   
+                                <input type="text" name="cpf" placeholder="Numero do cpf" >
+                
+                              <label for="data">Data de Nascimento:</label>   
+                                <input type="date" name="data"> 
+                                
+                
+                             </div >
+                             <br>
+                             <div id="sexualidade">
+
+                                <p>Gênero:</p>
+                        
+                                <input type="radio" name="sexo" id="F"> Feminino
+                                <input type="radio" name="sexo" id="M"> Masculino
+                                <label for="outros">outros</label> 
+                                <input type="text" name="outros">
+
+                             </div>
+                                
+             
+                          
+
+                            <div class="contato"><br>
+                    
+                                    <label for="email">Email:</label>               
+                                    <input type="email" name="email" placeholder="Ex: email.@gmail.com" class="tamanhoinput">
+                    
+                                    <label for="tel1"> cel:</label>               
+                                    <input type="tel" name="tel1" placeholder=" Ex:(11)99999-9999" required>
+                    
+                                    <label for="tel2"> cel 2:</label>                 
+                                    <input type="tel" name="tel2" placeholder="Ex:(11)99999-9999"> <br>
+                    
+                            </div>
+                            <br>
+                            <div class="localidade">
+                    
+                                <label for="cep">CEP:</label> 
+                                <input type="text" name="cep" placeholder="XXXXX">
+                
+                                 <label for="endereco">Endereço:</label>
+                                <input type="text" name="endereco" placeholder=" Ex:Rua tiete">
+                
+                               <label for="numero">N°:</label> 
+                                <input type="number" name="numero" placeholder="numero">
+                
+                                 <label for="complemento">complemento:</label>
+                                <input type="text" name="complemento" placeholder="EX: apt,12/bloco A">
+                
+                                <label for="cidade">cidade:</label> 
+                                <input type="text" name="cidade" placeholder="Ex: São Paulo">
+ 
+                                <br><br>
+            
+                                <label for="bairro">Bairro:</label> 
+                                <input type="text" name="bairro" placeholder="Ex: Sé Bela vista">
+
+                            </div > <br>
+
+                            <div id="defici_nao-defici">
+                                
+                                <input type="radio" name="defiencia" id="S"> deficente
+                                <input type="radio" name="defiencia" id="N"> Não deficente
+
+                                <br><br>
+
+                                <label for="tipo_deficiente">tipo de defiencia</label>
+                                <input type="text">
+
+                            </div>
+                             <br>
+
+                            <div id="tipo_funcionario">
+
+                                <label for="departamento_funci">Departamento:</label> 
+                                <select name="departamento_funci" id="departamento_funci">
+
+                                    <option selected disabled value=""> selecione</option>
+                                    <option value="captador">Captador</option>
+                                    <option value="supervisor">Supervisaor</option>
+                                    <option value="designer">Designer</option>
+                                    
+
+                                </select>
+
+                            </div> <br>
+
+                            <div class="caixas">
+     
+                                     
+                                <textarea name="feedback" id="feedback" cols="55" rows="10" placeholder="observação"></textarea>
+
+                            </div> <br>
+
+                            <div>
+                    
+                                <p>Redes sociais:</p><br>
+                
+                                <label for="facebook">Facebook:</label> 
+                                <input type="text" name="facebook">
+                                <br><br>
+                               <label for="instagram">instagram:</label> 
+                                <input type="text" name="instagram"> 
+                
+                                <br><br>
+                
+                             </div><br>
+                             <hr> <br>
+
+                             <div id="login">
+
+                                <label for="usuario">Usuario:</label>
+                                <input type="text" name="usuario" placeholder="insira um nome de usuario" required>
+                                 
+                                <br><br>
+
+                                <label for="senha">Senha:</label>
+                                <input type="password" placeholder="insira uma senha" required>
+
+                                <br><br>
+
+                                <label for="senha"> Confirmação de Senha :</label>
+                                <input type="password" placeholder="insira novamente a mesma senha" required>
+
+                             </div>
+
+                             </div>
+                            
+                         <div>
+                    
+                    </div>
+    
+                </fieldset> <br>
+                
+                <input type="button" value="cadastrar" id="form-btn-cadastrar">
+
+            </form>
+
+    </div>
+
+</body>
+</html>
